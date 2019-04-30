@@ -1,8 +1,10 @@
-#define APPLICATION_TITLE L"GAME TITLE"
+#pragma region Your Modification
+#define APPLICATION_TITLE L"NINJA GAIDEN"
 #define FULLSCREEN 0
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 450
+#define SCREEN_WIDTH 256
+#define SCREEN_HEIGHT 240
 #define MAX_FRAME_PER_SEC 120
+#pragma endregion
 
 #include "helperFunction.h"
 #include "DxGraph.h"
@@ -63,12 +65,16 @@ int WINAPI WinMain(
 }
 
 #pragma region Your Modification
-
 bool loadResourceCollection()
 {
+	texturesCollection->addTexture(
+		STAGE3_1_TEXTUREID, L"Resource/Stage3-1_tileset.bmp", TRANSPARENCE_COLOR);
+	texturesCollection->addTexture(
+		STAGE3_2_TEXTUREID, L"Resource/Stage3-2_tileset.bmp", TRANSPARENCE_COLOR);
+	texturesCollection->addTexture(
+		STAGE3_3_TEXTUREID, L"Resource/Stage3-3_tileset.bmp", TRANSPARENCE_COLOR);
 	return true;
 }
-
 #pragma endregion
 
 void loopMainMessage()
