@@ -1,5 +1,7 @@
 #include "helperFunction.h"
 #include <stdio.h>	
+#include <fstream>
+#include <iostream>
 
 void showBug(wchar_t * format, ...)
 {
@@ -125,4 +127,26 @@ DIPROPDWORD createDeviceDataBuffer(DWORD bufferSize)
 	dipdw.diph.dwHow = DIPH_DEVICE;
 	dipdw.dwData = bufferSize;
 	return dipdw;
+}
+
+D3DXVECTOR2 getSizeOfTexture(LPDIRECT3DTEXTURE9 texture)
+{
+	D3DSURFACE_DESC surfaceDesc;
+	texture->GetLevelDesc(0, &surfaceDesc);
+	return D3DXVECTOR2(surfaceDesc.Width, surfaceDesc.Height);
+}
+
+std::vector<std::string> getAllLineInTextFile(std::string path)
+{
+	std::vector<std::string> lines;
+	std::string line;
+	std::ifstream myTextFile(path);
+	if (myTextFile.is_open())
+	{
+		while (getline(myTextFile, line))
+			lines.push_back(line);
+		myTextFile.close();
+	}
+
+	return lines;
 }
