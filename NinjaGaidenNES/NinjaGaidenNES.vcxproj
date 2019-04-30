@@ -162,6 +162,7 @@
     <ClInclude Include="InteractiveObject.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="TextureCollection.h" />
+    <ClInclude Include="TileMap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
@@ -180,6 +181,7 @@
     <ClCompile Include="InteractiveObject.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="TextureCollection.cpp" />
+    <ClCompile Include="TileMap.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
