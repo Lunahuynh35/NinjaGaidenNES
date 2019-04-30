@@ -10,6 +10,11 @@ bool GameWorld::initialize()
 	clientSize = DxGraph::getInstance()->getClientSize();
 	setCameraPosition(0, clientSize.y);
 
+	stage3_1_Map = new TileMap(Stage::_3_1);
+	stage3_1_Map->setPosition(8, 168);
+	stage3_2_Map = new TileMap(Stage::_3_2);
+	stage3_3_Map = new TileMap(Stage::_3_3);
+
 	loadResource();
 
 	return true;
@@ -40,7 +45,7 @@ void GameWorld::render()
 		//
 		// Call render function of all gameObject in game world
 		//
-
+		stage3_1_Map->render(camera_wP);
 
 		//
 		//
@@ -53,13 +58,16 @@ void GameWorld::render()
 
 bool GameWorld::loadResource()
 {
+	stage3_1_Map->loadResource();
 
 	return true;
 }
 
 GameWorld::~GameWorld()
 {
-
+	delete stage3_1_Map;
+	delete stage3_2_Map;
+	delete stage3_3_Map;
 }
 
 GameWorld::GameWorld()
