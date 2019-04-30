@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{7d801b64-e32a-46c4-bc50-e7a70971d424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{780df23e-3f2b-49ae-939b-b4d8d857d600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{4ad31531-1db6-4b80-85c3-acf43e9b9b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{9cba0fc6-9746-4fd2-b03d-48cf1c98024c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Objects">
+      <UniqueIdentifier>{38a12f1a-db8a-429c-a2bf-25a5c19f0a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Objects">
+      <UniqueIdentifier>{cdb5f84a-b9d2-481b-8d16-fab3aeed9613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Graphics">
+      <UniqueIdentifier>{a2d7311b-e3fe-45cf-ad50-f7005f62e243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Graphics">
+      <UniqueIdentifier>{0e61bf42-d02e-4ff4-9e75-04ad48d5be57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Collision">
+      <UniqueIdentifier>{9d1ee070-8198-4169-b829-849ce2e33508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Collision">
+      <UniqueIdentifier>{74b347c1-ca22-44c9-a439-7c058f47c0d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Infrastructure">
+      <UniqueIdentifier>{3475ed69-fba3-4ed1-9709-ef90da293e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Infrastructure">
+      <UniqueIdentifier>{bff79356-d4cd-4b17-9b6a-db4deef908c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DxGraph.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DxInput.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DxKeyboard.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DxMouse.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="helperFunction.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="gameInputHandler.h">
+      <Filter>Header Files\Game\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWorld.h">
+      <Filter>Header Files\Game\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundBox.h">
+      <Filter>Header Files\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetector.h">
+      <Filter>Header Files\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionEvent.h">
+      <Filter>Header Files\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files\Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationCollection.h">
+      <Filter>Header Files\Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureCollection.h">
+      <Filter>Header Files\Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="InteractiveObject.h">
+      <Filter>Header Files\Game\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DxGraph.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="DxInput.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="DxKeyboard.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="DxMouse.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="helperFunction.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationCollection.cpp">
+      <Filter>Source Files\Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureCollection.cpp">
+      <Filter>Source Files\Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundBox.cpp">
+      <Filter>Source Files\Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetector.cpp">
+      <Filter>Source Files\Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionEvent.cpp">
+      <Filter>Source Files\Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="gameInputHandler.cpp">
+      <Filter>Source Files\Game\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWorld.cpp">
+      <Filter>Source Files\Game\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="InteractiveObject.cpp">
+      <Filter>Source Files\Game\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
