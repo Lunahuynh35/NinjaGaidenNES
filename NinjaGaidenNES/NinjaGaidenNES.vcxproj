@@ -148,6 +148,9 @@
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="AnimationCollection.h" />
+    <ClInclude Include="DuckAtkState.h" />
+    <ClInclude Include="DuckState.h" />
+    <ClInclude Include="IdleState.h" />
     <ClInclude Include="BoundBox.h" />
     <ClInclude Include="CollisionDetector.h" />
     <ClInclude Include="CollisionEvent.h" />
@@ -160,13 +163,20 @@
     <ClInclude Include="GameWorld.h" />
     <ClInclude Include="helperFunction.h" />
     <ClInclude Include="InteractiveObject.h" />
+    <ClInclude Include="JumpState.h" />
+    <ClInclude Include="MainCharacter.h" />
+    <ClInclude Include="MoveState.h" />
     <ClInclude Include="Sprite.h" />
+    <ClInclude Include="StandAtkState.h" />
     <ClInclude Include="TextureCollection.h" />
     <ClInclude Include="TileMap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="AnimationCollection.cpp" />
+    <ClCompile Include="DuckAtkState.cpp" />
+    <ClCompile Include="DuckState.cpp" />
+    <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="BoundBox.cpp" />
     <ClCompile Include="CollisionDetector.cpp" />
     <ClCompile Include="CollisionEvent.cpp" />
@@ -179,7 +189,11 @@
     <ClCompile Include="GameWorld.cpp" />
     <ClCompile Include="helperFunction.cpp" />
     <ClCompile Include="InteractiveObject.cpp" />
+    <ClCompile Include="JumpState.cpp" />
+    <ClCompile Include="MainCharacter.cpp" />
+    <ClCompile Include="MoveState.cpp" />
     <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="StandAtkState.cpp" />
     <ClCompile Include="TextureCollection.cpp" />
     <ClCompile Include="TileMap.cpp" />
     <ClCompile Include="WinMain.cpp" />

@@ -49,6 +49,12 @@
     <Filter Include="Header Files\Game\Infrastructure">
       <UniqueIdentifier>{bff79356-d4cd-4b17-9b6a-db4deef908c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Game\Objects\MainCharacter">
+      <UniqueIdentifier>{def2f3cc-1eea-4755-bd0b-aff80825eaef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Objects\MainCharacter">
+      <UniqueIdentifier>{6eb20fe9-b050-4e24-adc1-472a80bb0424}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DxGraph.h">
@@ -101,6 +107,27 @@
     </ClInclude>
     <ClInclude Include="TileMap.h">
       <Filter>Header Files\Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="MainCharacter.h">
+      <Filter>Header Files\Game\Objects\MainCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleState.h">
+      <Filter>Header Files\Game\Objects\MainCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveState.h">
+      <Filter>Header Files\Game\Objects\MainCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="DuckState.h">
+      <Filter>Header Files\Game\Objects\MainCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpState.h">
+      <Filter>Header Files\Game\Objects\MainCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="StandAtkState.h">
+      <Filter>Header Files\Game\Objects\MainCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="DuckAtkState.h">
+      <Filter>Header Files\Game\Objects\MainCharacter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +184,27 @@
     </ClCompile>
     <ClCompile Include="TileMap.cpp">
       <Filter>Source Files\Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="MainCharacter.cpp">
+      <Filter>Source Files\Game\Objects\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleState.cpp">
+      <Filter>Source Files\Game\Objects\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveState.cpp">
+      <Filter>Source Files\Game\Objects\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="DuckState.cpp">
+      <Filter>Source Files\Game\Objects\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpState.cpp">
+      <Filter>Source Files\Game\Objects\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="StandAtkState.cpp">
+      <Filter>Source Files\Game\Objects\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="DuckAtkState.cpp">
+      <Filter>Source Files\Game\Objects\MainCharacter</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

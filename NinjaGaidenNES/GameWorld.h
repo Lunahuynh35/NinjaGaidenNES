@@ -1,13 +1,14 @@
 #pragma once
 
 #define BACKBUFFER_CLEAR_COLOR D3DCOLOR_XRGB(0, 0, 0)
-#define TRANSPARENCE_COLOR D3DCOLOR_XRGB(255, 0, 255)
+#define TRANSPARENCE_COLOR D3DCOLOR_XRGB(255, 163, 177)
 
 class GameWorld;
 typedef class GameWorld * LPGAMEWORLD;
 
 #include <d3dx9.h>
 #include "TileMap.h"
+#include "MainCharacter.h"
 
 class GameWorld
 {
@@ -17,9 +18,8 @@ private:
 	D3DXVECTOR2 clientSize;
 	// Put your game object
 	LPTILEMAP stage3_1_Map;
-	LPTILEMAP stage3_2_Map;
-	LPTILEMAP stage3_3_Map;
 
+	LPMAINCHAR mainCharacter;
 	//
 	GameWorld();
 	bool loadResource();
@@ -33,6 +33,7 @@ public:
 	D3DXVECTOR2 getCameraPosition();
 
 	void updateAfterDeltaTime(float deltaT);
+	void updateCameraPosition();
 	void finish();
 	void render();
 };

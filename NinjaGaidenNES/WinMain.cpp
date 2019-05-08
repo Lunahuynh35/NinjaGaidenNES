@@ -68,11 +68,13 @@ int WINAPI WinMain(
 bool loadResourceCollection()
 {
 	texturesCollection->addTexture(
-		STAGE3_1_TEXTUREID, L"Resource/Stage3-1_tileset.bmp", TRANSPARENCE_COLOR);
+		STAGE3_1_TEXTUREID, L"Resource/Maps/Stage3-1_tileset.bmp", TRANSPARENCE_COLOR);
 	texturesCollection->addTexture(
-		STAGE3_2_TEXTUREID, L"Resource/Stage3-2_tileset.bmp", TRANSPARENCE_COLOR);
+		STAGE3_2_TEXTUREID, L"Resource/Maps/Stage3-2_tileset.bmp", TRANSPARENCE_COLOR);
 	texturesCollection->addTexture(
-		STAGE3_3_TEXTUREID, L"Resource/Stage3-3_tileset.bmp", TRANSPARENCE_COLOR);
+		STAGE3_3_TEXTUREID, L"Resource/Maps/Stage3-3_tileset.bmp", TRANSPARENCE_COLOR);
+	texturesCollection->addTexture(
+		MAINCHARACTER_TEXTUREID, L"Resource/Sprite/MainCharacter.bmp", TRANSPARENCE_COLOR);
 	return true;
 }
 #pragma endregion
