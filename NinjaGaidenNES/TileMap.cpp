@@ -44,8 +44,7 @@ void TileMap::loadResource()
 		for (int j = 0; j < tilesetCols; j++)
 		{
 			tempSprite = new Sprite(texture, 
-				i * 16, j * 16, (j + 1) * 16, (i + 1) * 16,
-				0, 0);
+				i * 16, j * 16, (j + 1) * 16, (i + 1) * 16);
 			tileset.push_back(tempSprite);
 		}
 
@@ -58,6 +57,13 @@ void TileMap::loadResource()
 			tempLine.push_back(number);
 		matrixMap.push_back(tempLine);
 	}
+	size.x = matrixMap[0].size() * 16;
+	size.y = matrixMap.size() * 16;
+}
+
+D3DXVECTOR2 TileMap::getSize()
+{
+	return size;
 }
 
 void TileMap::render(D3DXVECTOR2 cam_wP)
