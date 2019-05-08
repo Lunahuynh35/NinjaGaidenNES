@@ -46,3 +46,9 @@ D3DXVECTOR2 Animation::getCenterCurFrame()
 		return D3DXVECTOR2(0, 0);
 	return frames[currentframe]->getCenter();
 }
+
+void Animation::setTransform(bool flipX, bool flipY, D3DXVECTOR2 scaleSize)
+{
+	for (int i = 0; i < frames.size(); i++)
+		frames[i]->setTransform(flipX, flipY, scaleSize);
+}

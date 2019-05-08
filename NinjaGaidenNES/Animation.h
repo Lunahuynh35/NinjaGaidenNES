@@ -25,4 +25,5 @@ public:
 	void render(D3DXVECTOR2 obj_wP, D3DXVECTOR2 cam_wP);
 	D3DXVECTOR2 getSizeCurFrame();
 	D3DXVECTOR2 getCenterCurFrame();
+	void setTransform(bool flipX, bool flipY, D3DXVECTOR2 scaleSize);
 };
