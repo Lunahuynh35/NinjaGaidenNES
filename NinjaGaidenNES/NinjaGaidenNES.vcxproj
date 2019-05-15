@@ -150,6 +150,7 @@
     <ClInclude Include="AnimationCollection.h" />
     <ClInclude Include="DuckAtkState.h" />
     <ClInclude Include="DuckState.h" />
+    <ClInclude Include="Grid.h" />
     <ClInclude Include="IdleState.h" />
     <ClInclude Include="BoundBox.h" />
     <ClInclude Include="CollisionDetector.h" />
@@ -166,6 +167,7 @@
     <ClInclude Include="JumpState.h" />
     <ClInclude Include="MainCharacter.h" />
     <ClInclude Include="MoveState.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="StandAtkState.h" />
     <ClInclude Include="TextureCollection.h" />
@@ -176,6 +178,7 @@
     <ClCompile Include="AnimationCollection.cpp" />
     <ClCompile Include="DuckAtkState.cpp" />
     <ClCompile Include="DuckState.cpp" />
+    <ClCompile Include="Grid.cpp" />
     <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="BoundBox.cpp" />
     <ClCompile Include="CollisionDetector.cpp" />
@@ -192,6 +195,7 @@
     <ClCompile Include="JumpState.cpp" />
     <ClCompile Include="MainCharacter.cpp" />
     <ClCompile Include="MoveState.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="StandAtkState.cpp" />
     <ClCompile Include="TextureCollection.cpp" />

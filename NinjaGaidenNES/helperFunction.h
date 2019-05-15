@@ -10,6 +10,7 @@ typedef struct BroadphaseBox BROADBOX;
 #include <string>
 #include <vector>
 
+
 struct BroadphaseBox
 {
 	D3DXVECTOR2 position;
@@ -28,3 +29,4 @@ bool checkAABB_BroadphaseBox(BROADBOX broadBox1, BROADBOX broadBox2);
 DIPROPDWORD createDeviceDataBuffer(DWORD bufferSize);
 D3DXVECTOR2 getSizeOfTexture(LPDIRECT3DTEXTURE9 texture);
 std::vector<std::string> getAllLineInTextFile(std::string path);
+void findAndReplaceAll(std::string & data, std::string toSearch, std::string replaceStr);

@@ -10,11 +10,13 @@ bool GameWorld::initialize()
 	clientSize = DxGraph::getInstance()->getClientSize();
 	setCameraPosition(0, clientSize.y);
 
-	stage3_1_Map = new TileMap(Stage::_3_1);
-	stage3_1_Map->setPosition(8, 168);
+	stage3_1_Background = new TileMap(Stage::_3_1);
+	stage3_1_Background->setPosition(8, 168);
 
 	mainCharacter = MainCharacter::getInstance();
 	mainCharacter->setPosition(50, 40);
+
+	grid = new Grid();
 
 	loadResource();
 
@@ -24,6 +26,7 @@ bool GameWorld::initialize()
 void GameWorld::updateAfterDeltaTime(float deltaT)
 {
 	mainCharacter->updateAfterDeltaTime(deltaT);
+	grid->updateAfterDeltaTime(deltaT);
 	updateCameraPosition();
 }
 
@@ -31,8 +34,9 @@ void GameWorld::updateCameraPosition()
 {
 	D3DXVECTOR2 tempCamera;
 	tempCamera.x = mainCharacter->getPosition().x - clientSize.x / 2;
-	if (tempCamera.x > 0 && tempCamera.x < stage3_1_Map->getSize().x - clientSize.x)
+	if (tempCamera.x > 0 && tempCamera.x < stage3_1_Background->getSize().x - clientSize.x)
 		camera_wP.x = (int)tempCamera.x;
+	
 }
 
 void GameWorld::finish()
@@ -55,7 +59,7 @@ void GameWorld::render()
 		//
 		// Call render function of all gameObject in game world
 		//
-		stage3_1_Map->render(camera_wP);
+		stage3_1_Background->render(camera_wP);
 		mainCharacter->render(camera_wP);
 
 		//
@@ -69,14 +73,16 @@ void GameWorld::render()
 
 bool GameWorld::loadResource()
 {
-	stage3_1_Map->loadResource();
+	stage3_1_Background->loadResource();
 	mainCharacter->loadResource();
+	grid->loadInfoFromFile();
+
 	return true;
 }
 
 GameWorld::~GameWorld()
 {
-	delete stage3_1_Map;
+	delete stage3_1_Background;
 	delete mainCharacter;
 }
 

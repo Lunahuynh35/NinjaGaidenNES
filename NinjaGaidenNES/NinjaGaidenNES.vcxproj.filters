@@ -55,6 +55,12 @@
     <Filter Include="Source Files\Game\Objects\MainCharacter">
       <UniqueIdentifier>{6eb20fe9-b050-4e24-adc1-472a80bb0424}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Game\SpacePartitioning">
+      <UniqueIdentifier>{85d6530e-a290-4104-baf8-0778407e8606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SpacePartitioning">
+      <UniqueIdentifier>{298920a4-a507-428f-9593-0dc897344c72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DxGraph.h">
@@ -128,6 +134,12 @@
     </ClInclude>
     <ClInclude Include="DuckAtkState.h">
       <Filter>Header Files\Game\Objects\MainCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Game\SpacePartitioning</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files\Game\SpacePartitioning</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +217,12 @@
     </ClCompile>
     <ClCompile Include="DuckAtkState.cpp">
       <Filter>Source Files\Game\Objects\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Game\SpacePartitioning</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files\Game\SpacePartitioning</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
